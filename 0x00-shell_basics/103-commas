@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a -1 -v | sed -e 's/^\.\{1,2\}$/&\//' | paste -sd "," -; echo
+(ls -a -1 -v | sed -e 's/^\.\{1,2\}$/&\//'; echo) | paste -sd ","
