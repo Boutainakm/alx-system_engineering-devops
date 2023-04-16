@@ -1,2 +1,2 @@
 #!/bin/bash
-(ls -a -1 -v | sed -e 's/^\.\{1,2\}$/&\//'; echo) | paste -sd ","
+ls -1Ap | awk '{printf "%s,", $0}' | sed 's/,$/\n/'
